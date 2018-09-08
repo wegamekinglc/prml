@@ -27,7 +27,7 @@ if __name__ == '__main__':
 
         plt.subplot(220 + i + 1)
         plt.plot(x2, y2, 'g')
-        plt.scatter(x1, y1, s=50, c='', edgecolors='purple', linewidths=1)
+        plt.scatter(x1, y1, s=50, c='None', edgecolors='purple', linewidths=1)
         plt.plot(x2, y3, 'r')
         plt.text(0.8, 0.8, "$M = {0}$".format(order))
 

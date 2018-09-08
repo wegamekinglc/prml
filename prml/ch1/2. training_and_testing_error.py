@@ -10,7 +10,7 @@ if __name__ == '__main__':
     from prml.ch1.utilities import *
     from matplotlib import pyplot as plt
 
-    sigma = 0.1
+    sigma = 0.2
     n_training = 10
     n_testing = 100
 
@@ -29,10 +29,11 @@ if __name__ == '__main__':
         y2_hat = fitted_curve(x2, beta)
         rms_testing.append(rms(y2, y2_hat))
 
-    plt.plot(orders, rms_training, '-b', marker='o', markersize=10)
-    plt.plot(orders, rms_testing, '-r', marker='o', markersize=10)
+    plt.plot(orders, rms_training, '-b', marker='o', markersize=10, markerfacecolor='None')
+    plt.plot(orders, rms_testing, '-r', marker='o', markersize=10,  markerfacecolor='None')
     plt.legend(['Training', 'Testing'], handlelength=5)
     plt.ylabel('$E_{RMS}$')
+    plt.title("Training v.s. Testing with root-mean-square error", fontsize=15)
     plt.show()
 
 
