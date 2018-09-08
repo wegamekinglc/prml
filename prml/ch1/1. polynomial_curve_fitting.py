@@ -20,7 +20,7 @@ if __name__ == '__main__':
     y1 = add_noise(y1, sigma=sigma)
 
     fig, _ = plt.subplots(2, 2, sharex='all', sharey='all')
-    fig.suptitle(r"Plots of polynomials having various orders $M$ fitted to the curve $sin(2\pi x)$", fontsize=15)
+    fig.suptitle(r"Polynomials having various orders $M$ fitted to the curve $sin(2\pi x)$", fontsize=15)
     for i, order in enumerate(orders):
         beta = fitting(x1, y1, order)
         y3 = fitted_curve(x2, beta)
