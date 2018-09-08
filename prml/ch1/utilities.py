@@ -27,9 +27,10 @@ def polynomials(x, order):
     return x_mat
 
 
-def fitting(x, y, order):
+def fitting(x, y, order, lam=0.):
+    m = order + 1
     x_mat = polynomials(x, order)
-    h = np.linalg.inv(x_mat.T @ x_mat) @ x_mat.T
+    h = np.linalg.inv(x_mat.T @ x_mat + np.diag(lam * np.ones(m))) @ x_mat.T
     beta = h @ y
     return beta
 
