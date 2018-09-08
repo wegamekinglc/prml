@@ -39,3 +39,8 @@ def fitted_curve(x, beta):
     x_mat = polynomials(x, order)
     y_hat = x_mat @ beta
     return y_hat
+
+
+def rms(y, y_hat):
+    n = len(y)
+    return math.sqrt(np.sum((y - y_hat) ** 2) / n)
