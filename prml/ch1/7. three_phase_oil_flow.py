@@ -23,6 +23,6 @@ if __name__ == '__main__':
     plt.scatter(df1[5], df1[6], c='None', edgecolors=colors)
     plt.xlabel('$x_6$')
     plt.ylabel('$x_7$')
-    plt.xlim([0., 1.])
-    plt.ylim([0., 2.])
+    plt.xlim(0, 1)
+    plt.ylim(0., 2.)
     plt.show()
