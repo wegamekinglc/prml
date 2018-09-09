@@ -24,7 +24,7 @@ if __name__ == '__main__':
 
     data_sets = [(x1, y1), (x2, y2)]
 
-    fig, _ = plt.subplots(1, 2, sharey='all')
+    fig, _ = plt.subplots(1, 2, sharey='all', sharex='all')
     fig.suptitle("Polynomials fitting with different data set size", fontsize=15)
     for i, data in enumerate(data_sets):
         x, y = data

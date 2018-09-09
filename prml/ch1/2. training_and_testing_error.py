@@ -34,6 +34,7 @@ if __name__ == '__main__':
     plt.legend(['Training', 'Testing'], handlelength=5)
     plt.ylabel('$E_{RMS}$')
     plt.title("Training v.s. Testing with root-mean-square error", fontsize=15)
+    plt.ylim(0., 1.)
     plt.show()
 
 
