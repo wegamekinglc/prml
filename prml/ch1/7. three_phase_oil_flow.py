@@ -20,9 +20,12 @@ if __name__ == '__main__':
 
     df1['c'] = labels
     colors = list(map(lambda x: 'r' if x == 0 else 'g' if x == 1 else 'b', df1['c']))
+    ax = plt.gca()
     plt.scatter(df1[5], df1[6], c='None', edgecolors=colors)
     plt.xlabel('$x_6$')
     plt.ylabel('$x_7$')
     plt.xlim(0, 1)
-    plt.ylim(0., 2.)
+    ax.xaxis.set_ticks(np.arange(0, 1.1, 0.25))
+    plt.ylim(0, 2)
+    ax.yaxis.set_ticks(np.arange(0, 2.1, 0.5))
     plt.show()
