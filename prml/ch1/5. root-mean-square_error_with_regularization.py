@@ -10,7 +10,7 @@ if __name__ == '__main__':
     from prml.ch1.utilities import *
     from matplotlib import pyplot as plt
 
-    sigma = 0.2
+    sigma = 0.3
     n_training = 15
     n_testing = 1000
 

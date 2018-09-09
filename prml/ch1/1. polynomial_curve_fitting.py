@@ -9,7 +9,7 @@ Created on 2018-9-8
 if __name__ == '__main__':
     from prml.ch1.utilities import *
     from matplotlib import pyplot as plt
-    sigma = 0.2
+    sigma = 0.3
     orders = [0, 1, 3, 9]
 
     n_training = 10
